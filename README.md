@@ -1,10 +1,6 @@
 # Quant_Project_1
  
-
-![GBM_1](Image_1.PNG)
-![GBM_2](Image_2.PNG)
-
-
+ 
 "## Code"
 
 "For detail code refer my github repo :- "
@@ -17,4 +13,9 @@
 " 4. [Market Volatility Forecasting: An ExtensiveComparative Study](https://github.com/Kapil3003/Quant_Project_4/blob/main/Project_4_Volatility%20Forecasting.ipynb)"
 
 " 5. [[webApp]](https://quantproject5-gcs2rtyqub8wj8osxwegu2.streamlit.app/) [Real-Time Options Chain Data Analysis Dashboard](https://github.com/Kapil3003/Quant_Project_5)"
+
+
+![GBM_1](Image_1.PNG)
+![GBM_2](Image_2.PNG)
+
 
