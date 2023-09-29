@@ -222,7 +222,10 @@ with col_2:
 
 st.divider()
 
-"## Code"
+
+
+
+"### Code"
 
 "For detail code refer my github repo :- "
 " 1. [[webApp]](https://quantproject1-csovwwndasw9kuk2vpygjp.streamlit.app/) [Predictive Analysis of Stock Trajectories using Geometric Brownian Motion](https://github.com/Kapil3003/Quant_Project_1/blob/main/Project_1_GBM.ipynb)"
