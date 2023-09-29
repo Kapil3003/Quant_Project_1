@@ -219,6 +219,9 @@ with col_2:
 		simulated_chart  = line_chart(st.session_state.simulation,"Simulated Price Movement","Date","Close_Price",600)
 		st.plotly_chart(simulated_chart, use_container_width=True)
 
+
+st.divider()
+
 "## Code"
 
 "For detail code refer my github repo :- "
