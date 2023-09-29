@@ -306,19 +306,11 @@ with col_2:
 "## Code"
 
 "For detail code refer my github repo :- "
-" 1. [Predictive Analysis of Stock Trajectories using Geometric Brownian Motion](https://kapil3003-01-clustering-clustering-streamlit-app-43fp3b.streamlitapp.com/)"
+" 1. [Predictive Analysis of Stock Trajectories using Geometric Brownian Motion](https://github.com/Kapil3003/Quant_Project_1/blob/main/Project_1_GBM.ipynb)"
 
 
 
 
-
-
-
-
-
-
-
-# test_simulate
 
 
 
