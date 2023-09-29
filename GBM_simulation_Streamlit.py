@@ -1,4 +1,4 @@
-## https://discuss.streamlit.io/t/launching-streamlit-webapp-from-desktop-shortcut/26297
+##
 ## pipreqs (to create requirement file needed for streamshare)
 ## cd to current folder 
 ## streamlit run GBM_simulation_Streamlit.py
@@ -112,90 +112,6 @@ st.title("Geometric Brownian Motion Simulations")
 YF_ticker_list = ('^GSPC', 'AAPL', 'GOOG','MSFT','TSLA') #"^GSPC" 
 
 
-
-# col_1, col_2,col_3, col_4,col_5 = st.columns(5)
-
-# with col_1:
-# 	YF_ticker = st.selectbox('Instrument?',YF_ticker_list)
-# 	st.write('You selected:', YF_ticker)
-
-# 	Data_Prices = data_download(YF_ticker)
-
-# 	# Calculate daily returns percentage
-# 	Data_Prices['Daily Return'] = Data_Prices['Adj Close'].pct_change().dropna()
-
-# 	# Estimate drift (mean of daily returns)
-# 	estimated_drift = (Data_Prices['Daily Return'].mean() )
-
-# 	# Estimate volatility (standard deviation of daily returns)
-# 	estimated_volatility = Data_Prices['Daily Return'].std() 
-
-# 	S0 = Data_Prices.Close.iloc[-1]
-# 	mu =  estimated_drift *100
-# 	sigma = estimated_volatility * 100	
-		
-
-# with col_2:
-# 	num_sim = st.slider('Number of Simulations?', 1, 1000, 10 , 1)
-# 	st.write("You selected: ", num_sim)
-
-
-# with col_3:
-# 	num_days = st.slider('Number of Days for simulation?', 1, 504, 252 , 1)
-# 	st.write("You selected: ", num_days)
-
-
-# with col_4:
-
-# 	mu_selected = st.slider(' Simulation Drift [mu-sigma to mu+sigma]', mu - sigma , mu + sigma, mu , 0.001)
-# 	mu_selected = round(mu_selected,4)
-# 	st.write("You selected: ", mu_selected)
-# 	mu_simulation = mu_selected/100
-
-# with col_5:
-# 	sigma_selected = st.slider(' Simulation Volatility [0 to 2*sigma]', 0.00000, 2 * sigma , sigma , sigma/10) 
-# 	sigma_selected = round(sigma_selected,4)
-# 	st.write("You selected: ", sigma_selected, "% of historical volatility")
-# 	sigma_simulation = sigma_selected * sigma/100
-
-
-# st.divider()
-
-# S0 = Data_Prices.Close.iloc[-1]
-# mu =  estimated_drift *100
-# sigma = estimated_volatility * 100	
-
-
-
-# test_simulate = simulate_gbm(S0, mu_simulation,sigma_simulation, num_days, num_sim)
-
-# close_chart  = line_chart(Data_Prices.Close,"10 Year Price Movement","Date","Close_Price")# line_chart("Close Price",Data_Prices,"Date","Close")
-# simulated_chart  = line_chart(test_simulate,"Simulated Price Movement","Date","Close_Price")# line_chart("Close Price",Data_Prices,"Date","Close")
-
-
-# col_1, col_2 = st.columns([1,2])
-# with col_1:
-# 	st.write("Historical Performance")
-# 	st.write(S0,mu,sigma)
-# 	st.plotly_chart(close_chart, use_container_width=True)
-
-# with col_2:
-# 	st.write("Simulation Parameters - No. Sim = ")
-# 	st.plotly_chart(simulated_chart, use_container_width=True)
-
-
-
-# col_1, col_2 = st.columns([1,2])
-# with col_1:
-# 	st.write("Historical Performance")
-# 	st.write(S0,mu,sigma)
-# 	st.plotly_chart(close_chart, use_container_width=True)
-
-# with col_2:
-# 	st.write("Simulation Parameters - No. Sim = ")
-# 	st.plotly_chart(simulated_chart, use_container_width=True)
-
-
 st.divider()
 
 
@@ -294,12 +210,12 @@ with col_2:
 
 	elif 'simulation' not in st.session_state :
 
-		st.write ("11111111 waiting for user to click simulate")
+		st.write ("Waiting for user to click simulate")
 		
 
 	if (state == False) and ('simulation' in st.session_state):
 
-		st.write("Waiting for user to click Simulate price to update the graph")
+		st.write("Waiting for user to click Simulate price and update the graph")
 		simulated_chart  = line_chart(st.session_state.simulation,"Simulated Price Movement","Date","Close_Price",600)
 		st.plotly_chart(simulated_chart, use_container_width=True)
 
